@@ -1,0 +1,41 @@
+
+#imgpane {
+    -fx-background-image: url("../pics/cat.jpg");
+    -fx-background-size: stretch stretch;
+}
+
+#username {
+    -fx-font-family: fantasy;
+    -fx-font-size: 16px;
+    -fx-focus-traversable: true;
+}
+
+#password {
+    -fx-font-family: fantasy;
+    -fx-font-size: 16px;
+    -fx-focus-traversable: true;
+
+}
+
+#login {
+    -fx-font-family: fantasy;
+    -fx-font-size: 16px;
+    -fx-background-color: cornflowerblue;
+}
+
+#sign {
+
+    -fx-font-family: fantasy;
+    -fx-font-size: 16px;
+    -fx-background-color: cornflowerblue;
+
+}
+
+#copyrights {
+    -fx-font-family: fantasy;
+    -fx-font-size: 16px;
+
+}
+
+
+

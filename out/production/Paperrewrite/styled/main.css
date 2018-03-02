@@ -1,0 +1,88 @@
+.button:hover{
+    -fx-background-color: #061B35;
+    -fx-font-family: fantasy;
+    -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0,0.8), 4, 0, 0, 0);
+    -fx-opacity: 0.7;
+}
+#toppane{
+    /*-fx-background-image: url("../pics/topshow.jpg");*/
+    -fx-background-color: #0D111C;
+    -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0,0.8), 6, 0, 0, 0);
+}
+#detaillab{
+    -fx-effect:   dropshadow(three-pass-box, rgba(0,0,0,0.8), 6, 0, 0, 0);
+    -fx-border-radius: 150;
+    -fx-border-color: blueviolet;
+}
+.animated-option-button {
+    -fx-pref-width: 50px;
+    -fx-background-color: #44B449;
+    -fx-background-radius: 50px;
+    -fx-pref-height: 50px;
+    -fx-text-fill: white;
+    -fx-border-color: WHITE;
+    -fx-border-radius: 50px;
+    -fx-border-width: 4px;
+}
+
+.animated-option-sub-button {
+    -fx-background-color: #43609C;
+}
+#righttoolpane{
+/*-fx-background-color: #061B35;*/
+/*,#202020);*/
+    -fx-background-color: linear-gradient(#4B4B4D, #202020);
+
+}
+
+
+.text-area .content {
+   -fx-background-color:   #4B4B4D;
+    -fx-text-fill: white;
+
+}
+.text-area   {
+    -fx-text-fill: honeydew;
+    -fx-font-family: cursive;
+
+}
+.text-area .scroll-bar{
+    -fx-background-color:derive(dodgerblue,90%);
+
+    -fx-background-insets: 2, 0, 0;
+
+    -fx-background-radius: 2em;
+
+}
+#leftoolpane{
+    -fx-background-color: linear-gradient(#4B4B4D, #202020);
+}
+
+
+#logo{
+    -fx-image: url("../pics/LEFTOP.png");
+}
+#startlogo{
+    -fx-image: url("../pics/Menu_48px.png");
+}
+#bendlogo{
+    -fx-image: url("../pics/Menu_48px.png");
+}
+#presslogo{
+    -fx-image: url("../pics/Menu_48px.png");
+}
+#pulllogo{
+    -fx-image: url("../pics/Menu_48px.png");
+}
+#checklogo{
+    -fx-image: url("../pics/Menu_48px.png");
+}
+#chooselogo{
+    -fx-image: url("../pics/Menu_48px.png");
+}
+#otherlogo{
+    -fx-image: url("../pics/Menu_48px.png");
+}
+#rfimg{
+    -fx-image: url("../pics/pt01.jpg");
+}

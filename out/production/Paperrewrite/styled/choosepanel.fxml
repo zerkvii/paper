@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="30.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Choosepanel">
+   <children>
+      <JFXButton buttonType="RAISED" layoutY="1.0" onAction="#bearcompute" prefHeight="30.0" prefWidth="155.0" style="-fx-background-color: #321654; -fx-background-radius: 0;" text="承载力" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXButton buttonType="RAISED" layoutX="158.0" onAction="#areacompute" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #7F2A43; -fx-background-radius: 0;" text="面积" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

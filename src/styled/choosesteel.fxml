@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" stylesheets="@choosesteel.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Choosesteel">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane fx:id="centt" prefHeight="543.0" prefWidth="590.0" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <AnchorPane fx:id="bottompane" prefHeight="60.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="69.0" text="计算结果" />
+                  <Label layoutX="78.0" layoutY="24.0" prefHeight="23.0" prefWidth="73.0" text="钢筋数量/根" />
+                  <Label layoutX="227.0" layoutY="24.0" prefHeight="23.0" prefWidth="91.0" text="钢筋直径/mm" />
+                  <Label layoutX="401.0" layoutY="24.0" prefHeight="23.0" prefWidth="105.0" text="钢筋总面积/mm2" />
+                  <JFXTextField layoutX="151.0" layoutY="24.0" prefHeight="23.0" prefWidth="47.0" />
+                  <JFXTextField layoutX="310.0" layoutY="24.0" prefHeight="23.0" prefWidth="60.0" />
+                  <JFXTextField layoutX="506.0" layoutY="24.0" prefHeight="23.0" prefWidth="60.0" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <left>
+            <AnchorPane fx:id="leftpane" prefHeight="440.0" prefWidth="120.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="3.0" layoutY="73.0" prefHeight="28.0" prefWidth="116.0" text="输入钢筋面积/mm2" />
+                  <JFXTextField layoutX="15.0" layoutY="101.0" prefHeight="23.0" prefWidth="90.0" AnchorPane.leftAnchor="15.0" />
+                  <Label layoutX="14.0" layoutY="155.0" prefHeight="28.0" prefWidth="100.0" text="钢筋直径/mm" />
+                  <JFXComboBox fx:id="dchoosebox" focusColor="#755db5" labelFloat="true" layoutX="15.0" layoutY="220.0" prefHeight="26.0" prefWidth="90.0" unFocusColor="#460354" AnchorPane.leftAnchor="15.0" />
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

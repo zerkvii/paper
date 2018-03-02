@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXNodesList?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Mainpage">
+   <children>
+      <BorderPane layoutX="-6.0" prefHeight="540.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane fx:id="leftoolpane" prefHeight="540.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXNodesList layoutX="4.0" layoutY="14.0" prefHeight="540.0" prefWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="logo" fitHeight="162.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton buttonType="RAISED" onMouseEntered="#showstart" prefHeight="51.0" prefWidth="186.0" ripplerFill="#0f4bff" text="start">
+                           <graphic>
+                              <HBox prefHeight="52.0" prefWidth="143.0">
+                                 <children>
+                                    <ImageView fx:id="startlogo" fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label prefHeight="54.0" prefWidth="90.0" text="开始" textFill="WHITE">
+                                       <font>
+                                          <Font name="STSong" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="80.0" onMouseEntered="#showbend" prefHeight="51.0" prefWidth="161.0" ripplerFill="#0f4bff" text="bend">
+                           <graphic>
+                              <HBox prefHeight="52.0" prefWidth="143.0">
+                                 <children>
+                                    <ImageView fx:id="bendlogo" fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label prefHeight="52.0" prefWidth="110.0" text="正截面受弯" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="138.0" onMouseEntered="#showpress" prefHeight="58.0" prefWidth="158.0" ripplerFill="#0f4bff" text="press">
+                           <graphic>
+                              <HBox prefHeight="52.0" prefWidth="143.0">
+                                 <children>
+                                    <ImageView fx:id="presslogo" fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label prefHeight="54.0" prefWidth="90.0" text="正截面受压" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="138.0" onMouseEntered="#showpull" prefHeight="51.0" prefWidth="161.0" ripplerFill="#0f4bff" text="pull">
+                           <graphic>
+                              <HBox prefHeight="52.0" prefWidth="143.0">
+                                 <children>
+                                    <ImageView fx:id="pulllogo" fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label prefHeight="52.0" prefWidth="110.0" text="正截面受拉" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="254.0" onAction="#choosesteel" onMouseEntered="#showchoose" prefHeight="51.0" prefWidth="161.0" ripplerFill="#0f4bff" text="choose">
+                           <graphic>
+                              <HBox prefHeight="52.0" prefWidth="143.0">
+                                 <children>
+                                    <ImageView fx:id="chooselogo" fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label prefHeight="52.0" prefWidth="110.0" text="选配钢筋" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="312.0" onAction="#checksteel" onMouseEntered="#showcheck" prefHeight="51.0" prefWidth="161.0" ripplerFill="#0f4bff" text="check">
+                           <graphic>
+                              <HBox prefHeight="52.0" prefWidth="143.0">
+                                 <children>
+                                    <ImageView fx:id="checklogo" fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label prefHeight="52.0" prefWidth="110.0" text="钢筋校核" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="370.0" onMouseEntered="#showother" prefHeight="51.0" prefWidth="161.0" ripplerFill="#0f4bff" text="other">
+                           <graphic>
+                              <HBox prefHeight="52.0" prefWidth="143.0">
+                                 <children>
+                                    <ImageView fx:id="otherlogo" fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label prefHeight="52.0" prefWidth="110.0" text="其他" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </JFXNodesList>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E7DEFC;" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="540.0" prefWidth="632.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <AnchorPane fx:id="toppane" prefHeight="40.0" prefWidth="810.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="detaillab" alignment="CENTER" layoutX="50.0" layoutY="5.0" prefHeight="30.0" prefWidth="631.0" text="详细说明" textFill="WHITE" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="5.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="toprightlabel" alignment="CENTER" layoutX="681.0" layoutY="5.0" prefHeight="31.0" prefWidth="115.0" text="计算面积" textFill="WHITE" AnchorPane.bottomAnchor="4.0" AnchorPane.topAnchor="5.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <left>
+                        <AnchorPane prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <BorderPane prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <center>
+                                    <AnchorPane fx:id="righttoolpane" prefHeight="500.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                                 <left>
+                                    <AnchorPane prefHeight="500.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <TextArea fx:id="text" prefHeight="501.0" prefWidth="518.0" promptText="——————计算书——————" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </left>
+                              </BorderPane>
+                           </children></AnchorPane>
+                     </left>
+                     <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #404040;" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane fx:id="loadchoicepane" layoutY="221.0" prefHeight="280.0" prefWidth="310.0" style="-fx-background-color: #404040;" />
+                              <AnchorPane layoutX="58.0" layoutY="47.0" prefHeight="160.0" prefWidth="310.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                                 <children>
+                                    <ImageView fx:id="rfimg" fitHeight="185.0" fitWidth="170.0" layoutX="21.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                                    <AnchorPane layoutX="177.0" layoutY="10.0" prefHeight="169.0" prefWidth="122.0">
+                                       <children>
+                                          <Label prefHeight="15.0" prefWidth="95.0" text="b:矩形截面宽度" textFill="WHITE" />
+                                          <Label layoutY="21.0" prefHeight="15.0" prefWidth="95.0" text="h:矩形截面高度" textFill="WHITE" />
+                                          <Label layoutY="41.0" prefHeight="15.0" prefWidth="127.0" text="x:矩形截面受压区高度" textFill="WHITE" />
+                                          <Label layoutY="60.0" prefHeight="15.0" prefWidth="95.0" text="As:钢筋面积" textFill="WHITE" />
+                                          <Label layoutY="78.0" prefHeight="15.0" prefWidth="95.0" text="a:钢筋合力点距离" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children></AnchorPane>
+                              <AnchorPane fx:id="choosebuttonpanel" layoutX="14.0" layoutY="4.0" prefHeight="30.0" prefWidth="310.0" style="-fx-background-color: #303030;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children></AnchorPane>
+                     </center>
+                  </BorderPane>
+                  <VBox fx:id="startmenu" layoutY="79.0" prefHeight="200.0" prefWidth="100.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: #24292E;">
+                     <children>
+                        <JFXButton onAction="#createfile" onMouseEntered="#shownew" prefHeight="40.0" prefWidth="100.0" text="新建" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="10.0" onAction="#openfile" onMouseEntered="#showopen" prefHeight="40.0" prefWidth="100.0" text="打开" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="51.0" onAction="#savefile" onMouseEntered="#showsave" prefHeight="40.0" prefWidth="100.0" text="保存" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="92.0" onAction="#savefileas" onMouseEntered="#showsaveas" prefHeight="40.0" prefWidth="100.0" text="另存" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="133.0" prefHeight="40.0" prefWidth="100.0" text="手气" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="bendmenu" layoutY="132.0" prefHeight="200.0" prefWidth="100.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: #24292E;">
+                     <children>
+                        <JFXButton onMouseEntered="#showsinglesq" prefHeight="40.0" prefWidth="140.0" text="单筋矩形" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="10.0" onMouseEntered="#showdoublesq" prefHeight="40.0" prefWidth="140.0" text="双筋矩形" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="51.0" onMouseEntered="#showTsq" prefHeight="40.0" prefWidth="140.0" text="T形截面" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="92.0" onMouseEntered="#showreverseLsq" prefHeight="40.0" prefWidth="140.0" text="倒L截面" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="133.0" prefHeight="40.0" prefWidth="140.0" text="手气不错" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="pressmenu" layoutY="195.0" prefHeight="200.0" prefWidth="100.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: #24292E;">
+                     <children>
+                        <JFXButton onMouseEntered="#shownormal" prefHeight="40.0" prefWidth="140.0" text="普通配筋" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="10.0" onMouseEntered="#showspiral" prefHeight="40.0" prefWidth="140.0" text="螺旋箍筋" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="51.0" onMouseEntered="#showsym" prefHeight="40.0" prefWidth="140.0" text="对称偏心" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="92.0" onMouseEntered="#shownonsym" prefHeight="40.0" prefWidth="140.0" text="不对称偏心" textFill="WHITE" />
+                        <JFXButton layoutX="10.0" layoutY="133.0" prefHeight="40.0" prefWidth="140.0" text="手气不错" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="pullmenu" layoutY="256.0" prefHeight="160.0" prefWidth="100.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: #24292E;">
+                     <children>
+                        <JFXButton onMouseEntered="#showaxial" prefHeight="40.0" prefWidth="140.0" text="轴心受拉" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="10.0" onMouseEntered="#showmirror" prefHeight="40.0" prefWidth="140.0" text="对称偏心" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="92.0" onMouseEntered="#shownonmirror" prefHeight="40.0" prefWidth="140.0" text="不对称偏心" textFill="WHITE" />
+                        <JFXButton layoutX="10.0" layoutY="133.0" prefHeight="40.0" prefWidth="140.0" text="手气不错" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="othermenu" layoutY="378.0" prefHeight="160.0" prefWidth="100.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: #24292E;">
+                     <children>
+                        <JFXButton onAction="#visitsource" onMouseEntered="#showori" prefHeight="40.0" prefWidth="140.0" text="访问源码" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="10.0" onAction="#feedback" onMouseEntered="#showfeedback" prefHeight="40.0" prefWidth="140.0" text="问题反馈" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="92.0" onAction="#contactme" onMouseEntered="#showauthor" prefHeight="40.0" prefWidth="140.0" text="联系作者" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="133.0" prefHeight="40.0" prefWidth="140.0" text="手气不错" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

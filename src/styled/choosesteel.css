@@ -1,0 +1,14 @@
+#leftpane {
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 3, 0, 0, 0);
+    -fx-background-image: url("../pics/left1.jpg");
+}
+
+#bottompane {
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 6, 0, 0, 0);
+    -fx-background-image: url("../pics/bottom.jpg");
+}
+#centt{
+    -fx-background-image: url("../pics/centtt.jpg");
+}

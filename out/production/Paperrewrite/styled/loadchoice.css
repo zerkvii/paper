@@ -1,0 +1,11 @@
+.combo-box .list-cell
+{
+    -fx-background: #202020;
+}
+.label{
+    -fx-text-fill: white;
+}
+
+.text-field{
+    -fx-text-fill: white;
+}
